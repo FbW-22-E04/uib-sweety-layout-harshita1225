@@ -50,11 +50,14 @@
 #container{
     background-image:url("./images/sweetBg.jpg");
     background-repeat: no-repeat;
+    /*background-size:155%;
+    background-position: center bottom;*/
     background-size:cover;
-    background-position: center;
-    height: 30em;
-    padding:5em;  
+    background-position:center 65%;
+    /*height: 30em;*/
+    padding:10em;  
 }
+
 #container h1{
     font-size: 2.5rem;
     color:darkblue;
@@ -62,7 +65,7 @@
 }
 #container p {
     color: rgb(138, 136, 136);
-    margin:1.5em;
+    margin:1.5rem;
 }
 
 
@@ -133,7 +136,19 @@ body{
 .menu-bar{
     display: none;
 }
- 
+
+#container{
+    height: 30rem;
+    padding:1.5rem;
+    background-size:155%;
+    background-position: center bottom;
+}
+#container h1,p{
+    padding-right:7rem;
+}
+#container button{
+    margin-top: 2rem;
+}
 }
 
 

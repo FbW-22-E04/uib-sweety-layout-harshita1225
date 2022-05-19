@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    font-family:'Inter', sans-serif,'Font-awesome', 'Lobster','cursive';
+    background-color: rgb(209, 204, 204);
+}
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:3rem;
+    position: sticky;
+    top:0;
+    background-color: rgb(209, 204, 204) ;
+}
+
+.flexrow{
+    display: flex;
+}
+
+#brand-name{
+    font-size:4rem;
+    font-family: 'Pacifico', cursive;;
+    font-weight: 200;
+    color:darkblue;
+}
+
+.icon{
+    font-size:2.2rem;
+    padding:1rem;
+    background: #eee;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 0.5rem;
+    margin-left:1rem;
+}
+.icon:hover {
+    background-color:rgb(245, 12, 156);
+}
+
+
+#container{
+    background-image:url("./images/sweetBg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 30em;
+    padding:5em;  
+}
+#container h1{
+    font-size: 2.5rem;
+    color:darkblue;
+    margin:1rem;
+}
+#container p {
+    color: rgb(138, 136, 136);
+    margin:1.5em;
+}
+
+
+button{
+    background-color: rgb(245, 12, 156);
+    color:darkblue;
+    width:10em;
+    padding:1rem;
+    border:2px solid darkblue;
+    border-radius:0.5em;
+}
+.flexbox{
+    border:2px solid yellow;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    
+}
+.donuts{
+    flex-grow: 1;
+    width:25em;
+    background-color:rgb(212, 245, 245);
+    border:1px solid gray;
+    padding:2rem;
+    text-align:center;
+    margin:1rem;
+}
+
+.donut-img{
+    width: 60%;
+    margin:1rem 0;
+    border-radius: 50%;
+}
+
+.donut-heading{
+    color:darkblue;
+    font-size: 2rem;
+    margin-bottom:2rem;
+}
+
+.donut-info{
+    color: rgb(129, 121, 121);
+    margin-bottom:1.5em;
+    line-height: 2rem;
+}
+
+
+/* media query*/
+
+
+@media (min-width:280px)
+{
+.menu-bar{
+    display: none;
+}
+body{
+    overflow: scroll;
+}
+
+
+    
+}
+
+
+
+@media (min-width:414px)
+{
+.menu-bar{
+    display: none;
+}
+ 
+}
+
+
+
+
+
+@media (min-width:768px)
+{
+
+.donuts{
+    width: 20em;
+}
+    
+}
+@media (min-width:881px)
+{
+
+.donuts{
+    width: 25em;
+}
+    
+}
+
+
+@media (min-width:992px)
+{
+  .iconbar
+  {
+    display:none;
+  }  
+
+  .menu-bar
+  {
+      display:inline-block;
+  }
+
+  .menu-bar a {
+      color:darkblue;
+      font-weight: 500;
+      text-decoration:none;
+      font-size:1.6rem;
+      margin:1rem;
+  }
+  .menu-bar a:hover{
+    text-decoration: underline; 
+     text-decoration-color:hotpink;
+    text-decoration-thickness: 5px;
+  }
+  .donuts{
+    width: 25em;
+}
+
+}

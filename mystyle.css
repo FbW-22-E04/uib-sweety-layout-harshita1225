@@ -16,7 +16,7 @@
     display:flex;
     justify-content: space-between;
     align-items:center;
-    padding:3rem;
+    padding:1rem;
     position: sticky;
     top:0;
     background-color: rgb(209, 204, 204) ;
@@ -25,6 +25,36 @@
 .flexrow{
     display: flex;
 }
+.iconbar {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top:4rem;
+    left:0;
+    z-index:1;
+    background-color:pink;
+    ;
+  }
+  
+  .iconbar:hover .dropdown-content {
+    display: block;
+  }
+  
+  .dropdown-content li {
+    display: block;
+    color:darkblue;
+    padding: 5px;
+    text-decoration: none;
+    width: 100%;
+  }
+  
+  .dropdown-content li:hover {
+    background-color: rgb(250, 250, 151);
+  }
 
 #brand-name{
     font-size:4rem;
@@ -51,9 +81,9 @@
     background-image:url("./images/sweetBg.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:center;
+    background-position:center 65%;
     height: 30em;
-    padding:1em;  
+    padding:3rem 7rem;  
 }
 
 #container h1{
@@ -63,6 +93,7 @@
 }
 #container p {
     color: rgb(138, 136, 136);
+    font-size: 1.4rem;
     margin:1.5rem;
 }
 
@@ -74,6 +105,7 @@ button{
     padding:1rem;
     border:2px solid darkblue;
     border-radius:0.5em;
+    
 }
 .flexbox{
     border:2px solid yellow;
@@ -114,38 +146,26 @@ button{
 /* media query*/
 
 
-@media (min-width:280px)
-{
-.menu-bar{
-    display: none;
-}
-body{
-    overflow: scroll;
-}
-
-    
-}
-
-
-
-@media (min-width:414px)
+@media (min-width:0px)
 {
 .menu-bar{
     display: none;
 }
 
-#container{
-    height: 30rem;
-    padding:1.5rem;
-    background-size:155%;
-    background-position: center bottom;
+
 }
-#container h1,p{
-    padding-right:7rem;
-}
-#container button{
-    margin-top: 2rem;
-}
+
+
+
+@media (max-width:526px){
+    #container {
+        background-image: url("./images/sweetBg.jpg");
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: 150%;
+        padding:2rem;
+        font-size: 1rem;
+    }
 }
 
 
@@ -158,18 +178,11 @@ body{
 .donuts{
     width: 20em;
 }
-#container{
-    background-size: cover;
-    background-position: center;
-}
-#container h1{
-padding-top:5rem;
-}
-#container button{
-    margin-top: 2rem;
-}
     
+
 }
+
+
 @media (min-width:881px)
 {
 

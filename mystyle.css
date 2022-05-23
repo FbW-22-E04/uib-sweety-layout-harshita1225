@@ -165,32 +165,20 @@ button{
         background-size: 150%;
         padding:2rem;
         font-size: 1rem;
+    }    
+}
+
+
+
+
+@media (min-width:668px)
+{
+    .donuts{
+        width:25%;
     }
 }
 
 
-
-
-
-@media (min-width:768px)
-{
-
-.donuts{
-    width: 20em;
-}
-    
-
-}
-
-
-@media (min-width:881px)
-{
-
-.donuts{
-    width: 25em;
-}
-    
-}
 
 
 @media (min-width:992px)
@@ -213,12 +201,10 @@ button{
       margin:1rem;
   }
   .menu-bar a:hover{
-    text-decoration: underline; 
-     text-decoration-color:hotpink;
-    text-decoration-thickness: 5px;
+      padding:1rem;
+    border-bottom:5px solid hotpink;
   }
-  .donuts{
-    width: 25em;
+.donuts{
+    width:30%;
 }
-
 }

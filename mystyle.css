@@ -110,11 +110,11 @@ button{
 .flexbox{
     border:2px solid yellow;
     flex-wrap: wrap;
-
     justify-content: center;
     
 }
 .donuts{
+
     flex-grow: 1;
     width:25em;
     background-color:rgb(212, 245, 245);
@@ -167,6 +167,14 @@ button{
         font-size: 1rem;
     }    
 }
+
+@media (min-width:415px)
+{
+    .donuts{
+        width:25%;
+    }
+}
+
 
 
 
